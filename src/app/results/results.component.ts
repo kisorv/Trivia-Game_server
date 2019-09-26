@@ -24,5 +24,7 @@ export class ResultsComponent implements OnInit {
     }
   }
 
-  displayScore() {}
+  goToScores() {
+    this.quizService.navigateToScores();
+  }
 }

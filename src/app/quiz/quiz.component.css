@@ -1,15 +1,57 @@
+/* mobile styling */
 :host {
-  display: block;
-  height: 100vh;
-  background-color: #d6dcce;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background-color: #fad9b4;
+}
+
+form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+ol,
+p {
+  font-size: 20px;
+}
+
+ol {
+  padding: 0px 0px 0px 20px;
+}
+
+h2 {
+  align-self: center;
+}
+
+#username {
+  width: 50%;
+  align-self: center;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+button {
+  align-self: center;
+  height: 30px;
+  border-radius: 15px;
+  background: black;
+  color: white;
+}
+
+button:hover {
+  background-color: transparent;
+  color: black;
 }
 
 /* desktop styling */
 @media only screen and (min-width: 768px) {
   :host {
-    display: block;
+    display: flex;
     height: 100%;
-    background: url("src/assets/90sCassette.jpg");
+    background: url("src/assets/music.jpg");
     background-size: 100% auto;
   }
 
@@ -18,5 +60,14 @@
     border: 2px solid;
     border-radius: 15px;
     width: 50%;
+  }
+
+  ol,
+  p {
+    font-size: 26px;
+  }
+
+  button {
+    height: 50px;
   }
 }

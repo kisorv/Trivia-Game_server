@@ -29,7 +29,6 @@ export class QuizService {
   }
 
   calculateScore(formValue: any, questions: any): any {
-    console.log(formValue, questions);
     this.submittedAnswers = formValue;
     this.quizQuestions = questions;
 
@@ -38,7 +37,6 @@ export class QuizService {
         this.score++;
       }
     }
-    console.log(this.score);
     this.postScores(formValue.username, this.score).subscribe();
   }
 

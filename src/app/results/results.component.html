@@ -1,6 +1,6 @@
-<p>Your Score: {{ score }}/10</p>
+<h2>Your Score: {{ score }}/10</h2>
 
-<h2>Answers</h2>
+<h3>Answers</h3>
 <ol>
   <li *ngFor="let question of questions">
     <p><strong>Question:</strong> {{ question.question_name }}</p>
@@ -8,5 +8,6 @@
     {{ question.answer }}
   </li>
 </ol>
+<button (click)="goToScores()">Scoreboard</button>
 
 <!-- {{ submittedAnswers[i] }} -->
