@@ -23,10 +23,25 @@ section {
   background: rgba(250, 217, 180, 0.7);
 }
 
-.buttonContainer {
+.container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+}
+
+ul {
+  padding: 0;
+  margin-top: 10%;
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-shadow: 2px 2px black;
 }
 
 button {
@@ -35,6 +50,7 @@ button {
   color: white;
   height: 50px;
   border: 2px dashed;
+  box-shadow: 2px 2px 2px 2px black;
 }
 
 button:hover {
@@ -49,5 +65,19 @@ button:hover {
     height: 100vh;
     background-image: url("src/assets/music.jpg");
     background-size: cover;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  ul {
+    margin-top: 0;
+  }
+
+  button {
+    width: 20%;
+    font-size: 20px;
+    text-shadow: 1px 1px black;
   }
 }

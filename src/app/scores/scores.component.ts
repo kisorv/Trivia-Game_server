@@ -16,4 +16,8 @@ export class ScoresComponent implements OnInit {
       this.scores = response;
     });
   }
+
+  goToQuiz() {
+    this.quizService.navigateToQuiz();
+  }
 }

@@ -3,14 +3,25 @@
   display: flex;
   justify-content: center;
   height: 100%;
-  background-color: #fad9b4;
+  background-color: black;
+}
+
+h2 {
+  color: white;
+}
+
+li {
+  color: #fad9b4;
+}
+
+p {
+  color: white;
 }
 
 form {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  background-color: white;
 }
 
 ol,
@@ -43,7 +54,8 @@ button {
 
 button:hover {
   background-color: transparent;
-  color: black;
+  color: #fad9b4;
+  box-shadow: 2px 2px 2px 2px #fad9b4;
 }
 
 /* desktop styling */
@@ -69,5 +81,9 @@ button:hover {
 
   button {
     height: 50px;
+  }
+
+  form {
+    background-color: black;
   }
 }

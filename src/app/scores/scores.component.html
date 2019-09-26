@@ -1,5 +1,6 @@
-<h1>Score Board</h1>
-<div *ngFor="let score of scores">
+<h1>Top 5 Scores</h1>
+<div class="scoreboard" *ngFor="let score of scores">
   <p>{{ score.username }}</p>
   <p>{{ score.score }}</p>
 </div>
+<button (click)="goToQuiz()">Play Again</button>
