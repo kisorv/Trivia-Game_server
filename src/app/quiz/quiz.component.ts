@@ -18,13 +18,9 @@ export class QuizComponent implements OnInit {
     });
   }
 
-  addUser(form: NgForm): any {
-    let userScore = this.quizService.calculateScore(
-      form.value,
-      this.questions,
-      form.value.username
-    );
-    // console.log(userScore);
-    this.quizService.postScores(userScore);
+  addUser(form: NgForm): void {
+    this.quizService.calculateScore(form.value, this.questions);
+    form.reset();
+    this.quizService.navigateToResults();
   }
 }

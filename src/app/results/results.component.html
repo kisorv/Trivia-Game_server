@@ -1,1 +1,12 @@
-<p>results works!</p>
+<p>Your Score: {{ score }}/10</p>
+
+<h2>Answers</h2>
+<ol>
+  <li *ngFor="let question of questions">
+    <p><strong>Question:</strong> {{ question.question_name }}</p>
+    <p><u>Correct Answer:</u></p>
+    {{ question.answer }}
+  </li>
+</ol>
+
+<!-- {{ submittedAnswers[i] }} -->

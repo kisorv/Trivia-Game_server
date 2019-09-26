@@ -7,9 +7,11 @@ import { QuizComponent } from "./quiz/quiz.component";
 import { ResultsComponent } from "./results/results.component";
 import { ScoresComponent } from "./scores/scores.component";
 import { RouterModule, Routes } from "@angular/router";
+import { HomeComponent } from "./home/home.component";
 
 const appRoutes: Routes = [
   { path: "", redirectTo: "/quiz", pathMatch: "full" },
+  { path: "home", component: HomeComponent },
   { path: "quiz", component: QuizComponent },
   { path: "results", component: ResultsComponent },
   { path: "scores", component: ScoresComponent }
@@ -20,7 +22,8 @@ const appRoutes: Routes = [
     AppComponent,
     QuizComponent,
     ResultsComponent,
-    ScoresComponent
+    ScoresComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

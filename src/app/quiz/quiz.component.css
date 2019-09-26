@@ -1,0 +1,22 @@
+:host {
+  display: block;
+  height: 100vh;
+  background-color: #d6dcce;
+}
+
+/* desktop styling */
+@media only screen and (min-width: 768px) {
+  :host {
+    display: block;
+    height: 100%;
+    background: url("src/assets/90sCassette.jpg");
+    background-size: 100% auto;
+  }
+
+  .quizContainer {
+    margin-left: 20px;
+    border: 2px solid;
+    border-radius: 15px;
+    width: 50%;
+  }
+}
