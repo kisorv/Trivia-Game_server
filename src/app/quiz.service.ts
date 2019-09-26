@@ -52,6 +52,10 @@ export class QuizService {
     this.router.navigate(["scores"]);
   }
 
+  resetScore() {
+    this.score = 0;
+  }
+
   returnCurrentAnswers() {
     return this.submittedAnswers;
   }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { QuizService } from "../quiz.service";
+import { format } from "url";
 
 @Component({
   selector: "app-scores",
@@ -19,5 +20,9 @@ export class ScoresComponent implements OnInit {
 
   goToQuiz() {
     this.quizService.navigateToQuiz();
+  }
+
+  resetUserScore() {
+    this.quizService.resetScore();
   }
 }

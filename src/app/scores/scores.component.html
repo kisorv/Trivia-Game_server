@@ -3,4 +3,4 @@
   <p>{{ score.username }}</p>
   <p>{{ score.score }}</p>
 </div>
-<button (click)="goToQuiz()">Play Again</button>
+<button (click)="[goToQuiz(), resetUserScore()]">Play Again</button>

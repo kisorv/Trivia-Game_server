@@ -10,7 +10,7 @@ import { NgForm } from "@angular/forms";
 export class ResultsComponent implements OnInit {
   submittedAnswers: any;
   questions: any;
-  score: number;
+  score: number = 0;
   disabled: boolean = true;
 
   constructor(private quizService: QuizService) {}
@@ -26,5 +26,9 @@ export class ResultsComponent implements OnInit {
 
   goToScores() {
     this.quizService.navigateToScores();
+  }
+
+  resetUserScore() {
+    this.quizService.resetScore();
   }
 }

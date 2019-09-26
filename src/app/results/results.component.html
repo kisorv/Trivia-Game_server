@@ -7,5 +7,4 @@
     <p><u>Correct Answer:</u> {{ question.answer }}</p>
   </li>
 </ol>
-<button (click)="goToScores()">Scoreboard</button>
-
+<button (click)="[goToScores(), resetUserScore()]">Scoreboard</button>
