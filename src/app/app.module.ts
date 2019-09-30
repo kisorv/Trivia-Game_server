@@ -10,7 +10,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
 
 const appRoutes: Routes = [
-  { path: "", redirectTo: "/quiz", pathMatch: "full" },
+  { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "home", component: HomeComponent },
   { path: "quiz", component: QuizComponent },
   { path: "results", component: ResultsComponent },
