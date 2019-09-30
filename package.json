@@ -7,11 +7,13 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "heroku-postbuild": "ng build --aot --prod"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.1.1",
+    "@angular/cli": "~8.1.1",
     "@angular/common": "~8.1.1",
     "@angular/compiler": "~8.1.1",
     "@angular/core": "~8.1.1",
@@ -21,6 +23,7 @@
     "@angular/router": "~8.1.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "path": "^0.12.7",
     "pg": "^7.12.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
@@ -46,5 +49,9 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.4.3"
+  },
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.9.0"
   }
 }
